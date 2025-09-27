@@ -8,10 +8,10 @@
  */
 
 import React, { useState } from 'react';
-import { QElementProvider } from 'qelements';
+import { QElementProvider } from '../src/QElementProvider';
 
 // Import parent styles (this initializes all parents)
-import '../styles/main-parents';
+import './styles/main-parents';
 
 // Import child components
 import App from './components/app';

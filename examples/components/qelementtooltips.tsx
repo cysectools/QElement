@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { QElementComponent, useQElementStyle } from 'qelements';
+import { QElementComponent, useQElementStyle } from '../../src/QElementComponent';
 
 const QElementTooltips = () => {
   // 🎯 This child inherits from 'card_container' parent

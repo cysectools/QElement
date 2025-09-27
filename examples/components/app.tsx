@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { QElementComponent, useQElementStyle } from 'qelements';
+import { QElementComponent, useQElementStyle } from '../../src/QElementComponent';
 
 const App = () => {
   // 🎯 This child inherits from 'main_container' parent

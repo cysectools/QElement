@@ -12,7 +12,8 @@
  * - components/dashboard.tsx - Child using dashboard_layout
  */
 
-import { QElement, QElementManager } from 'qelements';
+import { QElement } from '../../src/QElement';
+import { QElementManager } from '../../src/QElementManager';
 
 // 🏗️ MAIN CONTAINER PARENT
 // Used by: app.tsx, mainapp.tsx, and other main pages
@@ -128,16 +129,17 @@ const mobileMainContainer = new QElement('mobile_main_container', {
 
 // 🎯 REGISTER ALL PARENTS WITH THE MANAGER
 // This makes them available to all child components
-QElementManager.register(mainContainer);
-QElementManager.register(cardContainer);
-QElementManager.register(buttonContainer);
-QElementManager.register(dashboardLayout);
-QElementManager.register(sidebar);
-QElementManager.register(contentArea);
-QElementManager.register(badge);
-QElementManager.register(formInput);
-QElementManager.register(darkMainContainer);
-QElementManager.register(mobileMainContainer);
+const manager = new QElementManager();
+manager.register(mainContainer);
+manager.register(cardContainer);
+manager.register(buttonContainer);
+manager.register(dashboardLayout);
+manager.register(sidebar);
+manager.register(contentArea);
+manager.register(badge);
+manager.register(formInput);
+manager.register(darkMainContainer);
+manager.register(mobileMainContainer);
 
 // 🚀 EXPORT FOR USE IN CHILD FILES
 export {
