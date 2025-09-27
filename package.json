@@ -1,0 +1,58 @@
+{
+  "name": "qelements",
+  "version": "1.0.0",
+  "description": "A powerful TypeScript/TSX package for parent-child UI element management with cascading styles, themes, responsive design, animations, and performance monitoring",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "echo \"No linter configured\" && exit 0"
+  },
+  "keywords": [
+    "ui",
+    "typescript",
+    "react",
+    "tsx",
+    "components",
+    "styling",
+    "themes",
+    "responsive",
+    "animations",
+    "performance",
+    "parent-child",
+    "cascading",
+    "inheritance",
+    "overrides"
+  ],
+  "author": "QElements Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cysectools/QElement.git"
+  },
+  "homepage": "https://github.com/cysectools/QElement#readme",
+  "bugs": {
+    "url": "https://github.com/cysectools/QElement/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "examples"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
