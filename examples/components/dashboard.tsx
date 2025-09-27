@@ -1,15 +1,22 @@
 /**
- * 📊 DASHBOARD.TSX - CHILD FILE
+ * 👶 CHILD FILE - DASHBOARD.TSX
+ * 
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * 👶 THIS IS A CHILD FILE - Inherits from multiple parent styles
+ * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * This file uses multiple parents from main-parents.tsx:
  * - dashboard_layout (main layout)
  * - sidebar (navigation)
  * - content_area (main content)
  * - card_container (for dashboard cards)
+ * 
+ * 🏗️ PARENTS: dashboard_layout, sidebar, content_area, card_container (defined in styles/main-parents.tsx)
+ * 👶 CHILD: This component inherits from multiple parents
  */
 
 import React from 'react';
-import { QElementComponent, useQElementStyle } from '../../src/QElementComponent';
+import { QElementComponent, useQElementStyle } from 'qelements';
 
 const Dashboard = () => {
   // 🎯 Multiple parent inheritance

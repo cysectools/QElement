@@ -1,19 +1,22 @@
 /**
- * 🎯 MAIN PARENTS FILE
+ * 🎯 PARENT FILE - MAIN PARENTS FILE
+ * 
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * 🏗️ THIS IS A PARENT FILE - Contains all parent style definitions
+ * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * This file contains ALL parent styles for your entire application.
  * Change styles here to affect ALL children across your app.
  * 
- * File Structure:
- * - styles/main-parents.tsx (THIS FILE) - All parent definitions
- * - components/app.tsx - Child using main_container
- * - components/mainapp.tsx - Child using main_container  
- * - components/qelementtooltips.tsx - Child using card_container
- * - components/dashboard.tsx - Child using dashboard_layout
+ * 📁 File Structure:
+ * - styles/main-parents.tsx (THIS FILE) - 🏗️ PARENT: All parent definitions
+ * - components/app.tsx - 👶 CHILD: Uses main_container parent
+ * - components/mainapp.tsx - 👶 CHILD: Uses main_container parent  
+ * - components/qelementtooltips.tsx - 👶 CHILD: Uses card_container parent
+ * - components/dashboard.tsx - 👶 CHILD: Uses dashboard_layout parent
  */
 
-import { QElement } from '../../src/QElement';
-import { QElementManager } from '../../src/QElementManager';
+import { QElement, QElementManager } from 'qelements';
 
 // 🏗️ MAIN CONTAINER PARENT
 // Used by: app.tsx, mainapp.tsx, and other main pages

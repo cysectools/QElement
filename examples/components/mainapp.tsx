@@ -1,12 +1,19 @@
 /**
- * 🏠 MAINAPP.TSX - CHILD FILE
+ * 👶 CHILD FILE - MAINAPP.TSX
+ * 
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * 👶 THIS IS A CHILD FILE - Inherits from parent styles
+ * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * This file also uses the 'main_container' parent from main-parents.tsx
  * It will inherit the same styles as app.tsx, but can have its own overrides
+ * 
+ * 🏗️ PARENT: main_container (defined in styles/main-parents.tsx)
+ * 👶 CHILD: This component inherits from main_container parent
  */
 
 import React from 'react';
-import { QElementComponent, useQElementStyle } from '../../src/QElementComponent';
+import { QElementComponent, useQElementStyle } from 'qelements';
 
 const MainApp = () => {
   // 🎯 This child also inherits from 'main_container' parent

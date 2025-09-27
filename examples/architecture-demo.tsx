@@ -1,14 +1,22 @@
 /**
- * 🎯 ARCHITECTURE DEMO
+ * 🎯 DEMO FILE - ARCHITECTURE DEMO
+ * 
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * 🎮 THIS IS A DEMO FILE - Shows parent-child architecture in action
+ * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * This file demonstrates the complete parent-child architecture:
  * 1. Import and initialize parents from main-parents.tsx
  * 2. Use child components that inherit from parents
  * 3. Show how changing parents affects all children
+ * 
+ * 🏗️ PARENTS: All defined in styles/main-parents.tsx
+ * 👶 CHILDREN: All components in components/ directory
+ * 🎮 DEMO: This file shows the complete architecture
  */
 
 import React, { useState } from 'react';
-import { QElementProvider } from '../src/QElementProvider';
+import { QElementProvider } from 'qelements';
 
 // Import parent styles (this initializes all parents)
 import './styles/main-parents';

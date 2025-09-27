@@ -1,12 +1,19 @@
 /**
- * 💡 QELEMENTTOOLTIPS.TSX - CHILD FILE
+ * 👶 CHILD FILE - QELEMENTTOOLTIPS.TSX
+ * 
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * 👶 THIS IS A CHILD FILE - Inherits from parent styles
+ * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * This file uses the 'card_container' parent from main-parents.tsx
  * Perfect for tooltips, modals, info cards, etc.
+ * 
+ * 🏗️ PARENT: card_container (defined in styles/main-parents.tsx)
+ * 👶 CHILD: This component inherits from card_container parent
  */
 
 import React from 'react';
-import { QElementComponent, useQElementStyle } from '../../src/QElementComponent';
+import { QElementComponent, useQElementStyle } from 'qelements';
 
 const QElementTooltips = () => {
   // 🎯 This child inherits from 'card_container' parent
