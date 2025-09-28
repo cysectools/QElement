@@ -2,21 +2,21 @@
   "name": "@qelements/ui",
   "version": "1.0.0",
   "description": "A powerful TypeScript/TSX package for parent-child UI element management with cascading styles, themes, responsive design, animations, and performance monitoring",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "types": "build/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./build/index.js",
+      "require": "./build/index.js",
+      "types": "./build/index.d.ts"
     }
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "clean": "rm -rf dist",
-    "prepublishOnly": "npm run clean && npm run build",
+    "build": "npx tsc",
+    "dev": "npx tsc --watch",
+    "clean": "find dist -type f -delete && rmdir dist 2>/dev/null || true",
+    "prepublishOnly": "npm run build",
     "test": "echo \"No tests specified\" && exit 0",
     "lint": "echo \"No linter configured\" && exit 0"
   },
@@ -56,11 +56,14 @@
     "react-dom": ">=16.8.0"
   },
   "files": [
-    "dist",
+    "build",
     "README.md",
     "examples"
   ],
   "engines": {
     "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
