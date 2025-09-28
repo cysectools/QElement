@@ -32,6 +32,3 @@ export type {
   QElementResponsiveConfig,
   QElementPerformanceConfig
 } from './types';
-
-// Re-export React for convenience
-export { default as React } from 'react';
