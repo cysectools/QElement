@@ -18,7 +18,7 @@ Check out the live demo at: **[https://q-elements-demo.vercel.app](https://q-ele
 ## Installation
 
 ```bash
-npm install qelements
+npm install @qelements/ui
 ```
 
 ## Quick Start
@@ -26,7 +26,7 @@ npm install qelements
 ### 1. Wrap your app with QElementProvider
 
 ```tsx
-import { QElementProvider } from 'qelements';
+import { QElementProvider } from '@qelements/ui';
 
 function App() {
   return (
@@ -40,7 +40,7 @@ function App() {
 ### 2. Create parent components
 
 ```tsx
-import { QElementComponent, useQElementStyle } from 'qelements';
+import { QElementComponent, useQElementStyle } from '@qelements/ui';
 
 const ParentComponent = () => {
   const { updateParent } = useQElementStyle('main_container_element');

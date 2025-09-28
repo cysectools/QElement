@@ -1,9 +1,17 @@
 {
-  "name": "qelements",
+  "name": "@qelements/ui",
   "version": "1.0.0",
   "description": "A powerful TypeScript/TSX package for parent-child UI element management with cascading styles, themes, responsive design, animations, and performance monitoring",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
