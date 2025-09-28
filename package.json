@@ -54,8 +54,5 @@
   ],
   "engines": {
     "node": ">=14.0.0"
-  },
-  "dependencies": {
-    "qelements": "^1.0.0"
   }
 }
